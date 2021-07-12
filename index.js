@@ -7,7 +7,7 @@ const port = 3000;
 let pin;
 
 if (Gpio.accessible) {
-  pin = new Gpio(17, 'out');
+  pin = new Gpio(8, 'out');
 } else {
   pin = {
     write: async function(value) {
